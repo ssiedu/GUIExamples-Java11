@@ -44,6 +44,11 @@ public class ForthGUI extends java.awt.Frame {
         textField1.setBounds(210, 50, 120, 40);
 
         button1.setLabel("SAVE");
+        button1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button1ActionPerformed(evt);
+            }
+        });
         add(button1);
         button1.setBounds(150, 170, 70, 40);
 
@@ -56,6 +61,11 @@ public class ForthGUI extends java.awt.Frame {
     private void exitForm(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_exitForm
         System.exit(0);
     }//GEN-LAST:event_exitForm
+
+    private void button1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button1ActionPerformed
+        // TODO add your handling code here:
+        button1.setEnabled(false);
+    }//GEN-LAST:event_button1ActionPerformed
 
     /**
      * @param args the command line arguments
